@@ -11,4 +11,4 @@ class Solution:
             key = tuple(count) # use this frequency count as a key (converted to tuple so its hashable)
             anagrams_dict[key].append(s) # add current string to the list that corresponds with said key
         
-        return anagrams_dict.values()
+        return list(anagrams_dict.values())
